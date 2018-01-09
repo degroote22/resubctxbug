@@ -15,8 +15,7 @@ class Working extends React.Component {
 }
 
 class App extends React.Component {
-  renderA = () => "a";
-  renderB = () => "b";
+  renderWorks = () => "WORKS!!!";
 
   renderRedirect = () => <Router.Redirect to="/a" />;
   render() {
@@ -33,11 +32,7 @@ class App extends React.Component {
               />
               <Router.Route
                 path="/a"
-                render={this.renderA}
-              />
-              <Router.Route
-                path="/b"
-                render={this.renderB}
+                render={this.renderWorks}
               />
             </Router.Switch>
           </Working>
@@ -46,11 +41,7 @@ class App extends React.Component {
             <Router.Switch>
               <Router.Route
                 path="/a"
-                render={this.renderA}
-              />
-              <Router.Route
-                path="/b"
-                render={this.renderB}
+                render={this.renderWorks}
               />
             </Router.Switch>
           </NotWorking>
